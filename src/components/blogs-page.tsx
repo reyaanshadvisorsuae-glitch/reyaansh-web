@@ -210,7 +210,7 @@ export function BlogsPage({
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
                   src={resolveBlogImage(featuredBlog, 0, imageBaseUrl)}
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.28),rgba(15,29,41,0.92))]" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.16),rgba(15,29,41,0.72))]" />
                 <div className="relative grid w-full gap-10 p-6 md:grid-cols-2 md:items-end md:p-12 lg:p-16">
                   <article className="glass-card rounded-xl p-6 md:p-9">
                     <div className="mb-4 flex flex-wrap items-center gap-3">

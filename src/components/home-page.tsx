@@ -14,6 +14,7 @@ import {
   MdRealEstateAgent,
   MdWorkspacePremium,
 } from "react-icons/md";
+import { HomeConsultationForm } from "@/components/home-consultation-form";
 import { routes } from "@/lib/routes";
 
 type EcosystemPillar = {
@@ -274,12 +275,13 @@ export function HomePage() {
               sizes="100vw"
               src={heroImage}
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.18),transparent_24%),radial-gradient(circle_at_left_bottom,rgba(7,35,63,0.52),transparent_32%),linear-gradient(90deg,rgba(0,26,51,0.96),rgba(0,26,51,0.78),rgba(0,26,51,0.42))]" />
-            <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-bl from-secondary/18 to-transparent blur-3xl" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.12),transparent_24%),radial-gradient(circle_at_left_bottom,rgba(7,35,63,0.32),transparent_32%),linear-gradient(90deg,rgba(0,26,51,0.78),rgba(0,26,51,0.55),rgba(0,26,51,0.22))]" />
+            <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-bl from-secondary/10 to-transparent blur-3xl" />
           </div>
 
-          <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter pb-[22rem] md:pb-64 lg:pb-72">
-            <div className="max-w-4xl">
+          <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter pb-[28rem] md:pb-[22rem] lg:pb-72">
+            <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(360px,0.72fr)] lg:gap-12">
+              <div className="max-w-4xl">
               <div className="mb-8 inline-flex max-w-full items-center gap-3 rounded-full border border-white/12 bg-white/8 px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl sm:gap-4 sm:px-5">
                 <span className="hidden h-px w-16 bg-secondary sm:block" />
                 <span className="font-label-md text-[10px] uppercase tracking-[0.18em] text-secondary sm:text-xs sm:tracking-[0.28em] lg:tracking-[0.4em]">
@@ -319,6 +321,11 @@ export function HomePage() {
                 >
                   Global Portfolio
                 </Link>
+              </div>
+              </div>
+
+              <div className="w-full lg:justify-self-end">
+                <HomeConsultationForm />
               </div>
             </div>
           </div>

@@ -7,7 +7,9 @@ import {
   MdArticle,
   MdOutlineSchedule,
   MdPersonOutline,
+  MdPictureAsPdf,
 } from "react-icons/md";
+import { BlogPdfSection } from "@/components/blog-pdf-section";
 import {
   fetchPublicBlog,
   fetchPublicBlogs,
@@ -76,11 +78,11 @@ export default async function Page({ params }: BlogDetailPageProps) {
       <section className="relative overflow-hidden bg-primary-container pt-40 pb-24 text-white md:pt-48">
         <img
           alt={blog.title}
-          className="absolute inset-0 h-full w-full object-cover opacity-30"
+          className="absolute inset-0 h-full w-full object-cover opacity-50"
           src={heroImage}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,26,51,0.54),rgba(0,26,51,0.96))]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(233,193,118,0.2),transparent_42%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,26,51,0.38),rgba(0,26,51,0.78))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(233,193,118,0.12),transparent_42%)]" />
 
         <div className="relative z-10 mx-auto max-w-container-max px-gutter">
           <Link
@@ -125,6 +127,24 @@ export default async function Page({ params }: BlogDetailPageProps) {
               __html: getBlogContentHtml(blog.content || getSummary(blog)),
             }}
           />
+
+          {blog.pdfUrl ? (
+            <section className="mt-12">
+              <div className="mb-4">
+                <p className="flex items-center gap-2 font-label-md text-[11px] uppercase tracking-[0.18em] text-secondary">
+                  <MdPictureAsPdf aria-hidden="true" className="text-lg" />
+                  Attached PDF
+                </p>
+                <h2 className="mt-2 font-headline-sm text-xl text-primary">
+                  {blog.pdfFileName || blog.title}
+                </h2>
+              </div>
+              <BlogPdfSection
+                fileName={blog.pdfFileName || blog.title}
+                url={blog.pdfUrl}
+              />
+            </section>
+          ) : null}
         </article>
 
         <aside className="space-y-6 lg:sticky lg:top-32">

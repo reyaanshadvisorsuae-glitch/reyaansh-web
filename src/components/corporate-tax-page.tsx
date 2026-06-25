@@ -39,7 +39,7 @@ export function CorporateTaxPage() {
     <div className="bg-surface text-on-surface font-body-md">
       <main>
         <section className="relative flex min-h-[620px] items-center overflow-hidden bg-primary-container text-on-primary-container md:min-h-[716px]">
-          <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 opacity-40">
             <Image
               alt="Dubai International Financial Centre at dusk"
               className="object-cover"

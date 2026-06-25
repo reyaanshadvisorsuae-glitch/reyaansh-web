@@ -16,13 +16,13 @@ export function AmlPage() {
           <div className="absolute inset-0 z-0">
             <Image
               alt="AML compliance advisory hero"
-              className="h-full w-full object-cover brightness-50 grayscale-[0.3]"
+              className="h-full w-full object-cover brightness-75 grayscale-[0.1]"
               fill
               priority
               sizes="100vw"
               src="https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-container/75 via-primary-container/25 to-transparent" />
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter">

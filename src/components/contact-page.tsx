@@ -1,11 +1,11 @@
 import Image from "next/image";
 import {
-  MdArrowForward,
   MdEmail,
   MdLocationOn,
   MdSchedule,
 } from "react-icons/md";
 import type { IconType } from "react-icons";
+import { ContactInquiryForm } from "@/components/contact-inquiry-form";
 
 const heroImage =
   "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -50,7 +50,7 @@ export function ContactPage() {
               sizes="100vw"
               src={heroImage}
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,28,54,0.92)_0%,rgba(2,28,54,0.62)_48%,rgba(2,28,54,0.32)_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,28,54,0.74)_0%,rgba(2,28,54,0.48)_48%,rgba(2,28,54,0.18)_100%)]" />
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter py-24 text-white md:py-32">
@@ -132,85 +132,7 @@ export function ContactPage() {
                     24 hours.
                   </p>
 
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                      <div className="space-y-2">
-                        <label
-                          className="ml-1 font-label-md text-on-surface-variant"
-                          htmlFor="contact-name"
-                        >
-                          Name
-                        </label>
-                        <input
-                          id="contact-name"
-                          name="name"
-                          type="text"
-                          placeholder="Full Name"
-                          className="w-full rounded-t-xl border-0 border-b-2 border-outline-variant bg-surface-container-low px-4 py-3 text-on-background transition-all focus:border-secondary focus:outline-none"
-                        />
-                      </div>
-
-                      <div className="space-y-2">
-                        <label
-                          className="ml-1 font-label-md text-on-surface-variant"
-                          htmlFor="contact-phone"
-                        >
-                          Phone
-                        </label>
-                        <input
-                          id="contact-phone"
-                          name="phone"
-                          type="tel"
-                          placeholder="+971 00 000 0000"
-                          className="w-full rounded-t-xl border-0 border-b-2 border-outline-variant bg-surface-container-low px-4 py-3 text-on-background transition-all focus:border-secondary focus:outline-none"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <label
-                        className="ml-1 font-label-md text-on-surface-variant"
-                        htmlFor="contact-email"
-                      >
-                        Email Address
-                        <span className="text-error"> *</span>
-                      </label>
-                      <input
-                        id="contact-email"
-                        name="email"
-                        required
-                        type="email"
-                        placeholder="name@company.com"
-                        className="w-full rounded-t-xl border-0 border-b-2 border-outline-variant bg-surface-container-low px-4 py-3 text-on-background transition-all focus:border-secondary focus:outline-none"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <label
-                        className="ml-1 font-label-md text-on-surface-variant"
-                        htmlFor="contact-message"
-                      >
-                        How can we assist you?
-                      </label>
-                      <textarea
-                        id="contact-message"
-                        name="message"
-                        placeholder="Brief description of your strategic requirements..."
-                        rows={4}
-                        className="w-full rounded-t-xl border-0 border-b-2 border-outline-variant bg-surface-container-low px-4 py-3 text-on-background transition-all focus:border-secondary focus:outline-none"
-                      />
-                    </div>
-
-                    <div className="pt-2">
-                      <button
-                        type="submit"
-                        className="inline-flex w-full items-center justify-center gap-3 rounded-xl bg-secondary-container px-8 py-4 font-headline-sm text-primary shadow-[0_18px_40px_rgba(119,90,25,0.14)] transition-all hover:-translate-y-0.5 hover:bg-secondary-fixed md:w-auto"
-                      >
-                        <span>Send Inquiry</span>
-                        <MdArrowForward aria-hidden="true" className="text-xl" />
-                      </button>
-                    </div>
-                  </form>
+                  <ContactInquiryForm />
                 </div>
               </div>
             </div>

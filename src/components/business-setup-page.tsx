@@ -157,7 +157,7 @@ export function BusinessSetupPage() {
               sizes="100vw"
               src="https://plus.unsplash.com/premium_photo-1733317416241-d92ba6af4e51?q=80&w=1177&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,28,54,0.92)_0%,rgba(2,28,54,0.58)_55%,rgba(2,28,54,0.18)_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,28,54,0.74)_0%,rgba(2,28,54,0.42)_55%,rgba(2,28,54,0.12)_100%)]" />
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter">

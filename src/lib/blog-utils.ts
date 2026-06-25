@@ -20,6 +20,9 @@ export type BlogPost = {
   image?: string;
   imageUrl?: string;
   publishedAt?: string | null;
+  pdfFileName?: string;
+  pdfPublicId?: string;
+  pdfUrl?: string;
   slug?: string;
   status?: boolean;
   thumbnail?: string;
