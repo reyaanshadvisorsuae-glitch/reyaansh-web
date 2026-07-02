@@ -83,13 +83,13 @@ export function SectorsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             alt="Executive skyscraper perspective"
-            className="object-cover opacity-55"
+            className="object-cover opacity-40 mix-blend-luminosity"
             fill
             priority
             sizes="100vw"
             src={heroImage}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-container/85 via-primary-container/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/65 to-transparent" />
         </div>
         <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter py-20">
           <div className="max-w-3xl">

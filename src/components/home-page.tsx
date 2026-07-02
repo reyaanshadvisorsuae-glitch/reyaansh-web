@@ -275,8 +275,8 @@ export function HomePage() {
               sizes="100vw"
               src={heroImage}
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.12),transparent_24%),radial-gradient(circle_at_left_bottom,rgba(7,35,63,0.32),transparent_32%),linear-gradient(90deg,rgba(0,26,51,0.78),rgba(0,26,51,0.55),rgba(0,26,51,0.22))]" />
-            <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-bl from-secondary/10 to-transparent blur-3xl" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.18),transparent_24%),radial-gradient(circle_at_left_bottom,rgba(7,35,63,0.52),transparent_32%),linear-gradient(90deg,rgba(0,26,51,0.96),rgba(0,26,51,0.78),rgba(0,26,51,0.42))]" />
+            <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-bl from-secondary/18 to-transparent blur-3xl" />
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter pb-[28rem] md:pb-[22rem] lg:pb-72">
@@ -330,6 +330,7 @@ export function HomePage() {
             </div>
           </div>
 
+          
           <div className="absolute bottom-0 left-0 z-10 w-full px-gutter pb-12">
             <div className="mx-auto max-w-container-max">
               <div className="glass-dark-card relative overflow-hidden rounded-[2rem] border border-white/10 p-8 shadow-[0_28px_80px_rgba(0,0,0,0.24)] md:p-10">

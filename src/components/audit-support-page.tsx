@@ -73,7 +73,7 @@ export function AuditSupportPage() {
               <div className="glass-card relative z-10 aspect-square overflow-hidden rounded-[2rem] shadow-2xl">
                 <Image
                   alt="Modern glass-walled boardroom"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover grayscale-[20%] opacity-90"
                   fill
                   priority
                   sizes="(min-width: 768px) 45vw, 100vw"

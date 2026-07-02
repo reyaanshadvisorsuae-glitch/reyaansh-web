@@ -50,7 +50,7 @@ export function ContactPage() {
               sizes="100vw"
               src={heroImage}
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,28,54,0.74)_0%,rgba(2,28,54,0.48)_48%,rgba(2,28,54,0.18)_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,28,54,0.92)_0%,rgba(2,28,54,0.62)_48%,rgba(2,28,54,0.32)_100%)]" />
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-container-max px-gutter py-24 text-white md:py-32">

@@ -86,7 +86,7 @@ export function AboutPage() {
               sizes="100vw"
               src={heroImage}
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.12),transparent_28%),linear-gradient(90deg,rgba(0,26,51,0.78),rgba(0,26,51,0.55),rgba(0,26,51,0.22))]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.22),transparent_28%),linear-gradient(90deg,rgba(0,26,51,0.96),rgba(0,26,51,0.78),rgba(0,26,51,0.42))]" />
           </div>
 
           <div className="relative z-10 mx-auto grid w-full max-w-container-max items-end gap-12 px-gutter pb-24 text-white lg:grid-cols-12">

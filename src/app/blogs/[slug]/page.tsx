@@ -78,11 +78,11 @@ export default async function Page({ params }: BlogDetailPageProps) {
       <section className="relative overflow-hidden bg-primary-container pt-40 pb-24 text-white md:pt-48">
         <img
           alt={blog.title}
-          className="absolute inset-0 h-full w-full object-cover opacity-50"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
           src={heroImage}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,26,51,0.38),rgba(0,26,51,0.78))]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(233,193,118,0.12),transparent_42%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,26,51,0.54),rgba(0,26,51,0.96))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(233,193,118,0.2),transparent_42%)]" />
 
         <div className="relative z-10 mx-auto max-w-container-max px-gutter">
           <Link

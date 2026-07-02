@@ -103,13 +103,13 @@ export function VatServicesPage() {
           <div className="absolute inset-0 z-0">
             <Image
               alt="Dubai financial district skyline at dusk"
-              className="object-cover opacity-35"
+              className="object-cover opacity-18"
               fill
               priority
               sizes="100vw"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5hjPQqzUdmkIlAzFTrVfyz_JEyeREP-Q1EEiOBM8PZl47cCodGxlUrsOxeiVW2YscqD0kGdl-XJ-fz5RrZpX3pOgtVYWSIzmECGmmjp19y4E-4vFonLIsPaOEg_2cr32OYa-ulqx1agfWY7KvU5w6dog2bKZxsg10mXoN2mHfFfJzpK1JZbtvQaGUFc_EB1dYgggKzbP88KHtgwZz1Ek0UXYXVxrzZLahX-MbhzKx2fGUJV6Ksw_u1T6wn_dyBm0yi2i1MdSmKQhR"
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(233,193,118,0.12),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.05),transparent_22%),linear-gradient(90deg,rgba(0,26,51,0.78),rgba(0,26,51,0.55),rgba(0,26,51,0.28))]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(233,193,118,0.24),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.08),transparent_22%),linear-gradient(90deg,rgba(0,26,51,0.96),rgba(0,26,51,0.82),rgba(0,26,51,0.54))]" />
           </div>
 
           <div className="relative z-10 mx-auto grid max-w-container-max grid-cols-1 items-center gap-16 px-gutter lg:grid-cols-2">

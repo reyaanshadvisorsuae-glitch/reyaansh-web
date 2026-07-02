@@ -66,7 +66,7 @@ const initialState: FormState = {
 };
 
 const fieldClassName =
-  "w-full rounded-[1rem] border border-white/10 bg-[rgba(2,28,54,0.42)] px-4 py-3.5 text-sm text-white outline-none shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-all placeholder:text-white/32 focus:border-secondary/70 focus:bg-[rgba(2,28,54,0.58)] focus:ring-4 focus:ring-secondary/12";
+  "w-full rounded-[1rem] border border-white/10 bg-[rgba(2,28,54,0.42)] px-4 py-3.5 text-sm text-white outline-none shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-all placeholder:text-white/90 focus:border-secondary/70 focus:bg-[rgba(2,28,54,0.58)] focus:ring-4 focus:ring-secondary/12";
 
 const selectClassName =
   "w-full appearance-none rounded-[1rem] border border-secondary/18 bg-[linear-gradient(145deg,rgba(2,28,54,0.62),rgba(2,28,54,0.42))] px-4 py-3.5 pr-11 text-sm text-white outline-none shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_28px_rgba(0,0,0,0.08)] transition-all focus:border-secondary/75 focus:bg-[rgba(2,28,54,0.66)] focus:ring-4 focus:ring-secondary/12";

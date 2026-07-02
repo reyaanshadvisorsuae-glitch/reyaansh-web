@@ -16,7 +16,7 @@ export function EInvoicingPage() {
     <div className="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
       <main>
         <section className="relative flex min-h-[620px] items-center overflow-hidden bg-primary-container md:min-h-[716px]">
-          <div className="absolute inset-0 opacity-60">
+          <div className="absolute inset-0 opacity-40">
             <Image
               alt="Modern Dubai skyscraper at sunset"
               className="h-full w-full object-cover"
@@ -26,7 +26,7 @@ export function EInvoicingPage() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCldF5HCVw5N5n4l7Fo_TlWFZIiTgzt6IBvOKZo_R05dpybyR4k5Mf0Hy1QKJcoRz94jfiot3hPvMEKarWSfbxSPUZ1FeBkxN-mW-weu0AF4l5tCx0Y-ugBkl5zwSXlaXMPibXtxHm0ya-iTt7BWKHBn_cZZYfzjZ0ohUqMVIA-rJi2W-wwp8Ti_BD-VkhQ8UQLIXfe8UuX2jx8khlW1rbiaN5Oy7DQ1t4Wo_ILDiXOd_FtASO0yrmzg0je_DWqBLwLqgp5Kwl_xdcQ"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-container/80 via-primary-container/45 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/80 to-transparent" />
 
           <div className="relative mx-auto w-full max-w-container-max px-gutter py-section-padding-mobile md:py-section-padding-desktop">
             <div className="max-w-3xl">
