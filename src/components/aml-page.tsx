@@ -216,20 +216,6 @@ export function AmlPage() {
                   />
                   <div>
                     <p className="font-headline-sm text-[18px] text-primary">
-                      Automated SAR Filing
-                    </p>
-                    <p className="font-body-md text-body-md text-on-surface-variant">
-                      Streamlined Suspicious Activity Reporting to goAML portals.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <MdCheckCircle
-                    aria-hidden="true"
-                    className="mt-1 text-secondary"
-                  />
-                  <div>
-                    <p className="font-headline-sm text-[18px] text-primary">
                       Ultimate Beneficial Owner Verification
                     </p>
                     <p className="font-body-md text-body-md text-on-surface-variant">
@@ -286,3 +272,4 @@ export function AmlPage() {
     </div>
   );
 }
+

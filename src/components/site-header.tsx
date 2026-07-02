@@ -77,7 +77,7 @@ export function SiteHeader() {
     <nav className="fixed inset-x-0 top-3 z-50 px-3 sm:px-gutter">
       <div className="mx-auto max-w-[1220px]">
         <div className="relative rounded-[1.25rem] border border-white/80 bg-white/82 px-3 py-2 shadow-[0_18px_48px_rgba(0,26,51,0.12)] backdrop-blur-2xl sm:px-4">
-          <div className="absolute inset-0 rounded-[1.25rem] bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.12),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.28),transparent_72%)]" />
+          <div className="pointer-events-none absolute inset-0 rounded-[1.25rem] bg-[radial-gradient(circle_at_top_right,rgba(233,193,118,0.12),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.28),transparent_72%)]" />
 
           <div className="relative flex items-center justify-between gap-2">
             <Link
@@ -137,9 +137,9 @@ export function SiteHeader() {
                     }`}
                   >
                     <div className="relative overflow-hidden rounded-[1.45rem] border border-white/80 bg-[linear-gradient(145deg,rgba(255,255,255,0.98),rgba(248,245,238,0.96)_48%,rgba(238,246,255,0.92))] p-2.5 shadow-[0_22px_52px_rgba(0,26,51,0.15)] backdrop-blur-2xl">
-                      <div className="absolute inset-x-7 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(119,90,25,0.55),transparent)]" />
-                      <div className="absolute top-0 right-0 h-28 w-28 rounded-full bg-secondary-container/26 blur-3xl" />
-                      <div className="absolute bottom-0 left-0 h-24 w-24 rounded-full bg-primary-fixed/52 blur-3xl" />
+                      <div className="pointer-events-none absolute inset-x-7 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(119,90,25,0.55),transparent)]" />
+                      <div className="pointer-events-none absolute top-0 right-0 h-28 w-28 rounded-full bg-secondary-container/26 blur-3xl" />
+                      <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-24 rounded-full bg-primary-fixed/52 blur-3xl" />
                       <div
                         role="menu"
                         aria-label="Services"
@@ -401,3 +401,4 @@ export function SiteHeader() {
     </nav>
   );
 }
+

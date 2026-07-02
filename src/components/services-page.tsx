@@ -29,7 +29,7 @@ const trustMetrics = [
 
 const heroHighlights = [
   "Mainland & Free Zone Advisory",
-  "Corporate Tax Readiness",
+  "Corporate Tax and Transfer Pricing",
   "Ongoing Compliance Support",
 ];
 
@@ -101,7 +101,7 @@ const caseStudies = [
     metricLabel: "Compliance Transition Audit",
     summary:
       "Full-scale tax restructuring for a Tier-1 developer ahead of legislative changes.",
-    title: "Corporate Tax Readiness",
+    title: "Corporate Tax and Transfer Pricing",
   },
 ];
 
@@ -109,7 +109,7 @@ const faqItems = [
   {
     answer:
       "The Corporate Tax applies to all businesses and commercial activities in the UAE. We provide a full impact assessment to determine your liabilities and identify exemptions that may apply to your specific structure.",
-    question: "How does the new UAE Corporate Tax impact my business?",
+    question: "How do UAE Corporate Tax and transfer pricing impact my business?",
   },
   {
     answer:
@@ -474,18 +474,17 @@ export function ServicesPage() {
                     </span>
                   </div>
                   <h4 className="mb-2 font-headline-sm text-headline-sm">
-                    Corporate Tax
+                    Corporate Tax and Transfer Pricing
                   </h4>
                   <p className="font-body-md text-on-surface-variant">
-                    Strategic impact assessment and planning for the new UAE tax
-                    regime, optimizing group structures for the 9% regime.
+                    Strategic impact assessment, transfer pricing support, and return filing readiness for the UAE tax regime.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
                     <span className="rounded-full border border-white/65 bg-white/70 px-3 py-1.5 font-label-md text-[11px] uppercase tracking-[0.16em] text-primary/75">
                       Group Structure Review
                     </span>
                     <span className="rounded-full border border-white/65 bg-white/70 px-3 py-1.5 font-label-md text-[11px] uppercase tracking-[0.16em] text-primary/75">
-                      Impact Modelling
+                      Transfer Pricing
                     </span>
                     <span className="rounded-full border border-white/65 bg-white/70 px-3 py-1.5 font-label-md text-[11px] uppercase tracking-[0.16em] text-primary/75">
                       Filing Readiness
@@ -516,11 +515,10 @@ export function ServicesPage() {
                     className="mb-5 block rounded-3xl bg-[linear-gradient(135deg,rgba(119,90,25,0.12),rgba(254,212,136,0.28))] p-3 text-[3.2rem] text-secondary"
                   />
                   <h4 className="mb-3 font-headline-sm text-headline-sm">
-                    Audit
+                    Audit Support Services
                   </h4>
                   <p className="mb-5 font-body-md text-on-surface-variant">
-                    Independent external and internal audit services for clean
-                    opinions.
+                    Audit-ready documentation, forensic document review, FATCA and CRS compliance, and statutory audit support.
                   </p>
                   <div className="rounded-2xl border border-white/65 bg-white/65 px-4 py-3 shadow-sm">
                     <p className="font-label-md text-[11px] uppercase tracking-[0.16em] text-secondary">
@@ -776,3 +774,5 @@ export function ServicesPage() {
     </div>
   );
 }
+
+

@@ -27,7 +27,7 @@ export function SiteFooter() {
       id="contact"
       className="relative overflow-hidden border-t border-white/10 bg-[#001A33] text-white"
     >
-      <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(233,193,118,0.16),transparent_52%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(233,193,118,0.16),transparent_52%)]" />
       <div className="relative mx-auto grid max-w-container-max gap-10 px-gutter py-20 md:grid-cols-[1.15fr_0.8fr_0.9fr_1.05fr] md:items-start">
         <div className="space-y-5">
           <div className="inline-flex rounded-full border border-white/10 bg-white/5 px-3.5 py-2 font-label-md text-[10px] uppercase tracking-[0.14em] text-secondary-fixed">
@@ -113,3 +113,4 @@ export function SiteFooter() {
     </footer>
   );
 }
+

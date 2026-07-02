@@ -22,15 +22,15 @@ const workflowSteps = [
   },
   {
     description:
-      "Accurate Corporate Tax return filing support focused on compliance, risk reduction, and a seamless filing process.",
+      "Transfer pricing policy development, benchmarking, related-party transaction reviews, documentation, and compliance support.",
     number: "03",
-    title: "Return Filing Support",
+    title: "Transfer Pricing Support",
   },
   {
     description:
-      "Transfer pricing policy development, benchmarking, related-party transaction reviews, documentation, and compliance support.",
+      "Accurate Corporate Tax return filing support focused on compliance, risk reduction, and a seamless filing process.",
     number: "04",
-    title: "Transfer Pricing Support",
+    title: "Return Filing Support",
   },
 ] as const;
 
@@ -112,7 +112,7 @@ export function CorporateTaxPage() {
                 Corporate Tax De-registration
               </h3>
               <p className="font-body-md text-body-md opacity-80">
-                End-to-end deregistration support, including document review,
+                We provide end-to-end deregistration support, including document review,
                 FTA application preparation, submission, and query management
                 for a smooth process.
               </p>
@@ -127,7 +127,7 @@ export function CorporateTaxPage() {
                 Corporate Tax Impact Study
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Detailed assessment of operations, income streams, transactions,
+                We assist businesses in detailed assessment of operations, income streams, transactions,
                 reliefs, exemptions, and transitional adjustments to identify
                 Corporate Tax implications.
               </p>
@@ -143,7 +143,7 @@ export function CorporateTaxPage() {
                   Corporate Tax Return Filing Support Services
                 </h3>
                 <p className="font-body-md text-body-md text-on-surface-variant">
-                  Accurate and timely Corporate Tax return filing services that
+                  We deliver accurate and timely Corporate Tax return filing services that
                   help minimize tax risks, address compliance exposures, and
                   provide peace of mind through a seamless process.
                 </p>
@@ -169,7 +169,7 @@ export function CorporateTaxPage() {
                 Corporate Tax Advisory Services
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Strategic advisory to support tax-efficient structuring,
+                We provide strategic tax advisory to support tax-efficient structuring,
                 financing, restructuring, and profit repatriation decisions while
                 maintaining regulatory compliance.
               </p>
@@ -184,9 +184,7 @@ export function CorporateTaxPage() {
                 Transfer Pricing Support Services
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Transfer pricing policy development, benchmarking studies,
-                related-party transaction reviews, documentation preparation,
-                and compliance support to ensure arm&apos;s length outcomes.
+                We assist businesses in managing their transfer pricing obligations in accordance with UAE Corporate Tax regulations and international best practices. Our services include transfer pricing policy development, benchmarking studies, related-party transaction reviews, documentation preparation, and compliance support to help mitigate tax risks and ensure arm&apos;s length outcomes.
               </p>
             </article>
           </div>
@@ -276,3 +274,5 @@ export function CorporateTaxPage() {
     </div>
   );
 }
+
+

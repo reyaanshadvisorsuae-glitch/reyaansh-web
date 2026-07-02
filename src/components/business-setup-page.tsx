@@ -45,11 +45,10 @@ type WhyChooseItem = {
 const jurisdictions: DetailCard[] = [
   {
     description:
-      "Trade directly with the UAE market and take on government contracts. Benefit from 100% foreign ownership in most commercial sectors with no geographic restrictions on office space.",
+      "Trade directly within the UAE market. Benefit from 100% foreign ownership in most commercial sectors with no geographic restrictions on office space.",
     features: [
       "Unlimited Visas",
       "Direct UAE Trade",
-      "Government Tenders",
     ],
     icon: MdDomain,
     title: "Mainland Establishment",
@@ -436,3 +435,5 @@ export function BusinessSetupPage() {
     </div>
   );
 }
+
+

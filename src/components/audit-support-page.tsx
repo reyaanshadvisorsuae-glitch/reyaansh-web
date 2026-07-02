@@ -30,12 +30,12 @@ const checklistItems = [
   },
   {
     description:
-      "We prepare audit-ready schedules, reconciliations, and supporting working papers.",
-    title: "Develop Necessary Audit Documentation",
+      "Develop the necessary documentation for audits. We assist businesses in preparing and organizing the documentation required for statutory audits. Our team develops audit-ready schedules, reconciliations, and supporting working papers.",
+    title: "Document Forensic Review",
   },
   {
     description:
-      "Classification assessments, due diligence reviews, reporting support, and compliance framework implementation for FATCA and CRS obligations.",
+      "We assist financial institutions and businesses in meeting their obligations under the Foreign Account Tax Compliance Act (FATCA) and Common Reporting Standard (CRS). Our services include classification assessments, due diligence reviews, reporting support, and compliance framework implementation to ensure adherence to local regulatory requirements and international reporting standards.",
     title: "FATCA and CRS Compliance",
   },
 ] as const;
@@ -146,8 +146,7 @@ export function AuditSupportPage() {
                   </h3>
                 </div>
                 <p className="font-label-md text-label-md text-on-primary-container/80">
-                  Every invoice, ledger, and contract is vetted for compliance
-                  with IFRS and local UAE commercial law.
+                  Develop the necessary documentation for audits. We assist businesses in preparing and organizing the documentation required for statutory audits.
                 </p>
               </article>
 
@@ -271,3 +270,4 @@ export function AuditSupportPage() {
     </div>
   );
 }
+

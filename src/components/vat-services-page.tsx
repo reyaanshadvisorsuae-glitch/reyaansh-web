@@ -22,8 +22,8 @@ const assurancePoints = [
     title: "99.8% Accuracy Rate",
   },
   {
-    description: "Strategic support during FTA tax inspections.",
-    title: "FTA Audit Support",
+    description: "FTA Audit Support",
+    title: "Full Audit Protection",
   },
 ] as const;
 
@@ -72,7 +72,7 @@ const heroHighlights = [
 ] as const;
 
 const optimizationLevers = [
-  "Recovery Timing",
+  "Filing Timeline Reviews",
   "Documentation Controls",
   "Transaction Reviews",
 ] as const;
@@ -90,8 +90,8 @@ const faqItems = [
   },
   {
     answer:
-      "Yes. Most free zone companies can recover input tax on eligible business expenses, subject to standard FTA rules and any designated zone exceptions.",
-    question: "Can free zone companies recover VAT?",
+      "Yes. We help free zone companies assess VAT treatment, documentation requirements, and designated zone considerations under UAE VAT rules.",
+    question: "Do free zone companies need VAT compliance support?",
   },
 ] as const;
 
@@ -285,7 +285,7 @@ export function VatServicesPage() {
                 <ul className="relative z-10 mt-6 space-y-2 font-label-md text-label-md text-on-surface">
                   <li className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                    Data Reconciliation
+                    VAT
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
@@ -308,8 +308,7 @@ export function VatServicesPage() {
                   </h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">
                     Strategic VAT advisory for new business models, analysis of
-                    cross-border transactions including input tax optimization,
-                    and regulatory guidance to ensure compliance and minimize
+                    cross-border transactions and regulatory guidance to ensure compliance and minimize
                     risk.
                   </p>
                 </div>
@@ -383,9 +382,7 @@ export function VatServicesPage() {
                     VAT Refund Assistance Services
                   </h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    End-to-end support for recovering eligible input VAT,
-                    including eligibility assessment, documentation review,
-                    application preparation, and liaison with the FTA.
+                    End-to-end VAT refund support, including eligibility assessment, documentation review, application preparation, and liaison with the FTA.
                   </p>
                 </div>
               </article>
@@ -567,3 +564,7 @@ export function VatServicesPage() {
     </div>
   );
 }
+
+
+
+

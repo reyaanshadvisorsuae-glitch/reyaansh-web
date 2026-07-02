@@ -293,9 +293,6 @@ export function HomePage() {
                 <span className="mb-2 block text-display-lg-mobile font-extrabold md:text-display-lg">
                   Building Businesses.
                 </span>
-                <span className="text-gradient-gold mb-4 block text-4xl font-semibold italic md:text-6xl">
-                  Managing Numbers.
-                </span>
                 <span className="block text-3xl font-light opacity-90 md:text-5xl">
                   Ensuring Compliance.
                 </span>
@@ -912,3 +909,4 @@ export function HomePage() {
     </div>
   );
 }
+

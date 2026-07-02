@@ -42,14 +42,14 @@ export const serviceMenuLinks = [
     label: "VAT Services",
   },
   {
-    description: "UAE Corporate Tax registration, impact, and filing support.",
+    description: "Corporate tax and transfer pricing support.",
     href: routes.corporateTax,
-    label: "Corporate Tax",
+    label: "Corporate Tax and Transfer Pricing",
   },
   {
-    description: "Internal and external audit readiness support.",
+    description: "Audit-ready documentation and regulatory support.",
     href: routes.auditSupport,
-    label: "Audit Support",
+    label: "Audit Support Services",
   },
   {
     description: "FTA e-invoicing readiness and digital workflow alignment.",
@@ -62,3 +62,5 @@ export const serviceMenuLinks = [
     label: "AML Compliance",
   },
 ] as const;
+
+
