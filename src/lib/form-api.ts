@@ -61,3 +61,5 @@ export function submitHomeConsultation(payload: HomeConsultationPayload) {
 export function submitContactInquiry(payload: ContactInquiryPayload) {
   return submitForm("api/contact-inquiry", payload);
 }
+
+

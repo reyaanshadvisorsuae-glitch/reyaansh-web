@@ -52,6 +52,7 @@ type FormState = {
   email: string;
   industry: string;
   name: string;
+  otherService: string;
   phone: string;
   service: string;
 };
@@ -61,6 +62,7 @@ const initialState: FormState = {
   email: "",
   industry: "",
   name: "",
+  otherService: "",
   phone: "",
   service: "",
 };
@@ -80,9 +82,18 @@ export function HomeConsultationForm() {
   const [formMessage, setFormMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSucceeded, setSubmitSucceeded] = useState(false);
+  const showOtherServiceField = form.service === "Other Advisory Support";
 
   const updateField = <T extends keyof FormState>(field: T, value: FormState[T]) => {
     setForm((current) => ({ ...current, [field]: value }));
+  };
+
+  const updateService = (service: string) => {
+    setForm((current) => ({
+      ...current,
+      otherService: service === "Other Advisory Support" ? current.otherService : "",
+      service,
+    }));
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -91,13 +102,12 @@ export function HomeConsultationForm() {
     setFormMessage("");
 
     const payload = {
-      ...form,
       company: form.company.trim(),
       email: form.email.trim().toLowerCase(),
       industry: form.industry.trim(),
       name: form.name.trim(),
       phone: digitsOnly(form.phone),
-      service: form.service.trim(),
+      service: showOtherServiceField ? form.otherService.trim() : form.service.trim(),
     };
 
     const result = await submitHomeConsultation(payload);
@@ -232,7 +242,7 @@ export function HomeConsultationForm() {
               name="service"
               required
               value={form.service}
-              onChange={(event) => updateField("service", event.target.value)}
+              onChange={(event) => updateService(event.target.value)}
             >
               <option className="bg-primary text-white" value="">
                 What service do you require? *
@@ -248,6 +258,24 @@ export function HomeConsultationForm() {
               className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-2xl text-secondary-fixed"
             />
           </div>
+
+          {showOtherServiceField ? (
+            <>
+              <label className="sr-only" htmlFor="hero-consultation-other-service">
+                Other Advisory Service
+              </label>
+              <input
+                id="hero-consultation-other-service"
+                className={fieldClassName}
+                name="otherService"
+                placeholder="Please specify advisory service *"
+                required
+                type="text"
+                value={form.otherService}
+                onChange={(event) => updateField("otherService", event.target.value)}
+              />
+            </>
+          ) : null}
 
           <button
             className="group inline-flex w-full items-center justify-center gap-2 rounded-[1rem] bg-[linear-gradient(135deg,#775a19_0%,#e9c176_100%)] px-6 py-4 font-label-md text-sm uppercase tracking-[0.16em] text-primary shadow-[0_18px_40px_rgba(119,90,25,0.28)] transition-all hover:-translate-y-0.5 hover:shadow-[0_24px_50px_rgba(119,90,25,0.34)]"
@@ -277,3 +305,5 @@ export function HomeConsultationForm() {
     </section>
   );
 }
+
+
