@@ -11,7 +11,6 @@ function getPdfProxyUrl(url: string, download = false) {
   return download ? `${base}&download=1` : `${base}${PDF_VIEW_PARAMS}`;
 }
 
-/** Embed URL for iframe — hides thumbnail sidebar, fits page to width. */
 export function getPdfEmbedUrl(url?: string) {
   if (!url) return "";
   if (url.includes("res.cloudinary.com")) {
@@ -20,7 +19,6 @@ export function getPdfEmbedUrl(url?: string) {
   return `${url}${PDF_VIEW_PARAMS}`;
 }
 
-/** Direct download URL (no view params). */
 export function getPdfDownloadUrl(url?: string) {
   if (!url) return "";
   if (url.includes("res.cloudinary.com")) {

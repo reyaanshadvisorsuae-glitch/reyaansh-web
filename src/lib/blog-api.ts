@@ -1,5 +1,7 @@
 import type { BlogCategory, BlogPost } from "@/lib/blog-utils";
 
+const apiTimeoutMs = 5000;
+
 type ApiCollectionResponse<T> = {
   data?: {
     result?: T[];
@@ -20,10 +22,23 @@ export function getApiBaseUrl() {
   ).replace(/\/$/, "");
 }
 
+function createFetchSignal() {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), apiTimeoutMs);
+
+  return {
+    clear: () => clearTimeout(timeout),
+    signal: controller.signal,
+  };
+}
+
 export async function fetchApiCollection<T>(path: string) {
+  const request = createFetchSignal();
+
   try {
     const response = await fetch(`${getApiBaseUrl()}/${path}`, {
       cache: "no-store",
+      signal: request.signal,
     });
 
     if (!response.ok) return [];
@@ -32,13 +47,18 @@ export async function fetchApiCollection<T>(path: string) {
     return payload?.data?.result ?? payload?.result ?? [];
   } catch {
     return [];
+  } finally {
+    request.clear();
   }
 }
 
 export async function fetchApiItem<T>(path: string) {
+  const request = createFetchSignal();
+
   try {
     const response = await fetch(`${getApiBaseUrl()}/${path}`, {
       cache: "no-store",
+      signal: request.signal,
     });
 
     if (!response.ok) return null;
@@ -47,6 +67,8 @@ export async function fetchApiItem<T>(path: string) {
     return payload?.data ?? null;
   } catch {
     return null;
+  } finally {
+    request.clear();
   }
 }
 
